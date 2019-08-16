@@ -1,0 +1,26 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d app --source-maps",
+    "watch": "babel src -d app --source-maps --watch",
+    "dev2": "nodemon -w src --exec \"babel-node src --@babel/env\"",
+    "dev":"babel-node ./src/index.js",
+    "dev3":"babel-node src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  },
+  "dependencies": {
+    "@babel/node": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "nodemon": "^1.19.1"
+  }
+}
